@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header nav ul li a {
+  padding: 10px;
+  display: block;
+}
+header nav ul li.active {
+  color: rgb(12, 124, 236);
+}
+
+.jumboWrapper {
+  max-height: 500px;
+  overflow: hidden;
+}
+.jumboWrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.sectionCard {
+  background-color: rgb(28, 28, 28);
+}
+.sectionCard .cardWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  row-gap: 10px;
+}
+.sectionCard .cardWrapper .seriesTag {
+  position: absolute;
+  background-color: rgb(12, 124, 236);
+  left: 0;
+  top: -25px;
+}
+.sectionCard .cardWrapper .seriesTag h2 {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 45px;
+}
+.sectionCard .cardWrapper .button {
+  align-self: center;
+  text-transform: uppercase;
+  background-color: rgb(12, 124, 236);
+}
+.sectionCard .cardWrapper .button h3 {
+  padding: 10px 45px;
+}
+.sectionCard .cardWrapper .button h3 a {
+  color: white;
+}
+.sectionCard .cardWrapper .card {
+  width: 213px;
+  padding: 10px;
+}
+.sectionCard .cardWrapper .card figure {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.sectionCard .cardWrapper .card figure img {
+  width: 100%;
+}
+.sectionCard .cardWrapper .card h4 {
+  color: white;
+  padding-top: 10px;
+}
+
+.linkShop {
+  background-color: rgb(88, 134, 205);
+}
+.linkShop .linkWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.linkShop .linkWrapper .cardLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+.linkShop .linkWrapper .cardLink img {
+  width: 50px;
+}
+.linkShop .linkWrapper .cardLink p {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+}
