@@ -6,27 +6,29 @@
   </div>
   <section class="sectionCard">
     <div class="container cardWrapper">
-      @foreach ($comics as $item)
+      @foreach ($comics as $index => $value)
         <div class="card">
-          <figure>
-            <img src="{{ $item['thumb'] }}" alt="">
+          <a href="{{ route('comics.show', ['id' => $index]) }}">
+            <figure>
+            <img src="{{ $value['thumb'] }}" alt="">
           </figure>
           <h4>
-            {{ $item['title'] }}
+            {{ $value['title'] }}
           </h4>
+          </a>
         </div>
       @endforeach
-      <button class="button">
-        <h3>
-          <a href="/">load more</a>
-        </h3>
-      </button>
       <div class="seriesTag">
         <h2>
           current series
         </h2>
       </div>
     </div>
+    <button class="button">
+        <h3>
+          <a href="/">load more</a>
+        </h3>
+      </button>
   </section>
   <section class="linkShop">
     <div class="linkWrapper container">

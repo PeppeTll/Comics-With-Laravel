@@ -1,0 +1,32 @@
+.sectionDetail {
+  background-color: rgb(28, 28, 28);
+
+  .detailWrapper {
+    padding: 30px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+
+
+    .imgWrapper {
+      margin: 0 auto;
+      min-width: 300px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .textWrapper {
+      display: contents;
+      row-gap: 10px;
+      font-weight: lighter;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  }
+}

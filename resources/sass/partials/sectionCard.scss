@@ -1,5 +1,21 @@
 .sectionCard {
   background-color: rgb(28, 28, 28);
+  text-align: center;
+
+  .button {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: rgb(12, 124, 236);
+
+    h3 {
+      padding: 10px 45px;
+
+      a {
+        width: 100%;
+        color: white;
+      }
+    }
+  }
 
   .cardWrapper {
     display: flex;
@@ -23,22 +39,8 @@
       }
     }
 
-    .button {
-      align-self: center;
-      text-transform: uppercase;
-      background-color: rgb(12, 124, 236);
-
-      h3 {
-        padding: 10px 45px;
-
-        a {
-          color: white;
-        }
-      }
-    }
-
     .card {
-      width: 213px;
+      width: 213px; 
       padding: 10px;
 
       figure {

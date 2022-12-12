@@ -5,7 +5,7 @@
   <nav>
     <ul>
       <li><a href="/characters">characters</a></li>
-      <li class="active"><a href="/">comics</a></li>
+      <li class="{{ Request::route()->getName() == 'comics.index' ? 'active': '' }}"><a href="{{ route('comics.index') }}">comics</a></li>
       <li><a href="/movies">movies</a></li>
       <li><a href="/tv">tv</a></li>
       <li><a href="/games">games</a></li>
